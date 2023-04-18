@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		input[type="button"] {
+			width: 50px;
+			height: 50px;
+			margin: 5px;
+			font-size: 18px;
+		}
+		input[type="text"] {
+			width: 200px;
+			height: 50px;
+			font-size: 18px;
+			text-align: right;
+			padding-right: 5px;
+			margin-bottom: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<input type="text" id="result" readonly><br>
+	<input type="button" value="1" onclick="addToInput('1')">
+	<input type="button" value="2" onclick="addToInput('2')">
+	<input type="button" value="3" onclick="addToInput('3')">
+	<input type="button" value="+" onclick="addToInput('+')"><br>
+	<input type="button" value="4" onclick="addToInput('4')">
+	<input type="button" value="5" onclick="addToInput('5')">
+	<input type="button" value="6" onclick="addToInput('6')">
+	<input type="button" value="-" onclick="addToInput('-')"><br>
+	<input type="button" value="7" onclick="addToInput('7')">
+	<input type="button" value="8" onclick="addToInput('8')">
+	<input type="button" value="9" onclick="addToInput('9')">
+	<input type="button" value="*" onclick="addToInput('*')"><br>
+	<input type="button" value="0" onclick="addToInput('0')">
+	<input type="button" value="." onclick="addToInput('.')">
+	<input type="button" value="=" onclick="calculate()"><br>
+	<input type="button" value="/" onclick="addToInput('/')">
+	<input type="button" value="C" onclick="clearInput()">
+	<script>
+		function addToInput(value) {
+			document.getElementById('result').value += value;
+		}
+
+		function calculate() {
+			var input = document.getElementById('result').value;
+			var result = eval(input);
+			document.getElementById('result').value = result;
+		}
+
+		function clearInput() {
+			document.getElementById('result').value = "";
+		}
+	</script>
+</body>
+</html>
