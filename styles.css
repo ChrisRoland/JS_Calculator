@@ -1,6 +1,10 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     text-align: center;
+}
+
+h1 {
+    color: gainsboro;
 }
 
 input[type="button"] {
@@ -17,4 +21,13 @@ input[type="text"] {
     text-align: right;
     padding-right: 5px;
     margin-bottom: 10px;
+}
+
+.calcBody {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(22, 15, 151) 0%, rgb(81, 81, 232) 35%, rgba(0,212,255,1) 100%);
+    margin: 0px 550px;
+    padding: 5px;
+    border: 3px solid black;
+    border-radius: 5%;
 }
