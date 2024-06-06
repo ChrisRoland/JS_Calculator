@@ -12,6 +12,7 @@ input[type="button"] {
     height: 50px;
     margin: 5px;
     font-size: 18px;
+    border-radius: 5%;
 }
 
 input[type="text"] {
@@ -21,6 +22,7 @@ input[type="text"] {
     text-align: right;
     padding-right: 5px;
     margin-bottom: 10px;
+    border-radius: 5%;
 }
 
 .calcBody {
@@ -29,5 +31,5 @@ input[type="text"] {
     margin: 0px 550px;
     padding: 5px;
     border: 3px solid black;
-    border-radius: 5%;
+    border-radius: 7%;
 }
